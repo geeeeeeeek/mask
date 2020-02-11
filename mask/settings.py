@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '^0=kibvej3mquo#t+&-z+3bc15ahijvdb$q30g&0@q#!^5r$wo'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['i.mypython.me', '127.0.0.1']
 
