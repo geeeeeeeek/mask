@@ -24,7 +24,7 @@
 
                 {% if product.timestamp|check_expire < product.expire %}
                 <p>手机号：{{product.phone}}</p>
-                <p>微信号：{{product.weixin}}</p>
+                <p>微信号：{% if product.weixin %} {{product.weixin}} {% endif %}</p>
                 {% endif %}
 
                 <p>

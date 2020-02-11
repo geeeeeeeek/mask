@@ -7,8 +7,8 @@
 
     <div class="classification">
         <a class="ui {% if c %}{% else %}red{% endif %} label" href="{% url 'home' %}">全部</a>
-        <a class="ui {% if c == 0|stringformat:'s' %}red{% else %}{% endif %} label" href="?c=0">求购</a>
-        <a class="ui {% if c == 1|stringformat:'s' %}red{% else %}{% endif %} label" href="?c=1">供应</a>
+        <a class="ui {% if c == 1|stringformat:'s' %}red{% else %}{% endif %} label" href="?c=1">求购</a>
+        <a class="ui {% if c == 0|stringformat:'s' %}red{% else %}{% endif %} label" href="?c=0">供应</a>
     </div>
 
     <div class="large ui middle aligned divided list">
