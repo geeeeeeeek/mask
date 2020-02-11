@@ -26,7 +26,7 @@ def time_since(value, default="刚刚"):
 
 
 @register.filter
-def check_expire(value, default="刚刚"):
+def check_expire(value):
     if not isinstance(value, date):  # datetime is a subclass of date
         return value
     now = datetime.now(utc if is_aware(value) else None)
